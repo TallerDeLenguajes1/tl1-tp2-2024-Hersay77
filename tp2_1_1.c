@@ -14,7 +14,7 @@ int main(){
     for(i = 0;i < N; i++)
     {
         vt[i]= 1+rand()%100;
-        printf("%f ", vt[i]);
+        printf("%f ", *(vt+i)); //modifique el código anterior para utilizar aritmética de punteros (notación indexada) para recorrer el vector.
     }
 
     return 0;
